@@ -1,0 +1,6 @@
+rootProject.name = 'microservices-demo'
+
+include ":hello-service"
+include ":bye-service"
+project(":hello-service").projectDir = file("services/hello-service")
+project(":bye-service").projectDir = file("services/bye-service")
